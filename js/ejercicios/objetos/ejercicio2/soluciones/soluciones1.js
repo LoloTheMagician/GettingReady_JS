@@ -2,8 +2,10 @@ import { usuarios } from "../../../../data/users.js"
 
 const getUserMayorEdad = (usuarios) => {
     return usuarios.sort((usuarioDespues, usuarioAntes) => {
+
         // console.log('Antes ' , usuarioAntes)
         // console.log('Despues ', usuarioDespues)
+
         // Desempaquetamos el array de edades 
         const [edadDespues, edadAntes] = [usuarioDespues.edad, usuarioAntes.edad]
         return edadAntes - edadDespues
