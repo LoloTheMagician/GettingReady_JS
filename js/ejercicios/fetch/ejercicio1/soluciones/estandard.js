@@ -1,4 +1,4 @@
-import { USER_ID, fetchingData } from "./api/api.js";
+import { USER_ID, fetchingData } from "../../../../api/api.js";
 
 const allPosts = await fetchingData('users')
 const postsByUserId = async (id) => await fetchingData(`posts?userId=${id}`)
