@@ -1,10 +1,14 @@
-# Ejercicio 1
+# Ejercicios
 
-## Obtener usuarios mayores de edad
+---
+
+## Ejercicio 1
+
+### Obtener usuarios mayores de edad
 
 Necesitamos filtrar aquellos usuarios que sean mayores de edad (o edad _especificada_)
 
-## Requisitos
+### Requisitos
 
 + Crear una **función**
 + Devolver un **objeto** con la información del usuario
@@ -34,14 +38,13 @@ console.log(filtrarUsuariosMayores) // [
 `
 ___
 
-# Ejercicio 2
+## Ejercicio 2
 
-## Obtener el nombre del usuario más longevo
+### Obtener el nombre del usuario más longevo
 
 Devolver únicamente el nombre del usuario con mayor edad
 
-## Requisitos
+### Requisitos
 
 + Crear una función
 + Devolver un string
-
