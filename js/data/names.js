@@ -1,5 +1,5 @@
 export const nombres = [
-    'Lolo',
+    'Gonzalo',
     'Wilmer',
     'Kevin',
     'Gines',
