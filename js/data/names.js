@@ -1,4 +1,4 @@
-export default nombres = [
+export const nombres = [
     'Lolo',
     'Wilmer',
     'Kevin',
