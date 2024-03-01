@@ -2,7 +2,9 @@ import { nombres as names } from "../../../../data/names.js";
 
 
 // Creamos una función flecha anónima
+
 const toUpperCase = (text) => text.toUpperCase()
+
 
 const wordsCapitalize = (names, toMayuscula) => {
     const index = 0
