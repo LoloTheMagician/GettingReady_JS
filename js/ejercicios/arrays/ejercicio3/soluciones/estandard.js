@@ -17,7 +17,7 @@ const fizzBuzz = (numeroMaximo, ...divisibles) => {
             }
 
         }
-
+        // En caso que el string 'valor' este vacío, 'numeros' agregará a 'numero'
         numeros.push(valor || numero)
     }
 

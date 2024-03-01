@@ -1,27 +1,45 @@
 
-const fizzBuzz = (numeroMaximo) => {
-    
+const fizzBuzz = (divisibles, ...rangoNumerico) => {
+
+    const [numeroMinimo, numeroMaximo] = rangoNumerico
     const numeros = []
 
-    for (let numero = 1; numero <= numeroMaximo; numero++) {
-        
+    for (let numero = numeroMinimo; numero <= numeroMaximo; numero++) {
+
         let valor = ''
 
-        if (numero % 3 === 0) {
-            valor += 'Fizz'
+        for (const { numero: divisor, texto } of divisibles) {
+
+            const moduloValido = isDivisible(numero, divisor)
+            if (moduloValido) valor += texto
+
         }
 
-        if (numero % 5 === 0) {
-            valor += 'Buzz'
-        }
-        
-        valor = valor === '' ? numero : valor 
-
-        numeros.push(valor)
-
+        numeros.push(
+            valor || numero
+        )
     }
-    
+
     return numeros
 }
 
-console.log(fizzBuzz(15))
+const getDivisibles = (...divisibles) => divisibles
+
+const isDivisible = (numero, divisor) => numero % divisor === 0
+
+console.log(
+    fizzBuzz(
+        getDivisibles(
+            {
+                numero: 3,
+                texto: 'Fizz'
+            },
+            {
+                numero: 5,
+                texto: 'Buzz'
+            },
+        ),
+        1,
+        15
+    )
+)
